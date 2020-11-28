@@ -1,0 +1,40 @@
+<section class="mt-5" style="margin-left: 18rem;">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                <h2 class="text-center">Add Doctor</h2>
+                <form action="/admin/add-doctor" method="POST" enctype="multipart/form-data">
+                    <label for="">Name</label>
+                    <input type="text" name="Name" class="form-control">
+
+                    <label for="">Specialised</label>
+                    <input type="text" name="Specialised" class="form-control">
+
+                    <label for="">Field</label>
+                    <input type="text" name="Field" class="form-control"><br>
+
+                    <label for="">Gender</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" style="
+                         margin-left: 1rem;">
+                    
+                    <label for="female">Female</label><br>
+
+                        <br>
+                     <label for="">Image</label>
+                    <input type="file" name="Image" class="form-control">
+
+                    <button type="submit" style="background:#2196F3;" class="btn mt-4 text-light">Submit</button>
+
+
+                
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

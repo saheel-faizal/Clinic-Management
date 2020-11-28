@@ -1,0 +1,29 @@
+<section class="mt-5">
+<div class="row">
+    <div class="col-md-8 m-auto">
+        <div class="box">
+        <h2 class="ltext-center">Admin Login</h2>
+        
+        <form action="/admin/login" method="POST">
+        
+       
+            <div class="form-group" style="width: 50%;">
+                <label>Email Address</label>
+                <input type="email" name="Email" class="form-control" placeholder="Email Address">
+
+                <label>Password</label>
+                <input type="password" name="Password" class="form-control" placeholder="Password"><br>
+            
+           {{!-- <a href="/admin/register">Register</a> --}}
+            <button style="border-radius: 4px;" type="submit" class="btb btn-primary float-right">Login</button>
+            </div>
+            </div>
+             {{#if loginErr}}
+        <p class="error text-danger">Invalid Username or Password</p>
+         {{/if}}
+            
+        </form>
+       
+    </div>
+</div>
+</section>
